@@ -25,6 +25,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
     implementation 'com.google.endpoints:endpoints-framework:2.0.9'
+
     implementation 'javax.inject:javax.inject:1'
 
     implementation 'javax.servlet:servlet-api:2.5'
