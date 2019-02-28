@@ -43,6 +43,7 @@ android {
 dependencies {
     implementation project(':displayjokes')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     endpointsServer project(path: ':backend', configuration: 'endpoints')
 
     implementation 'com.google.android.gms:play-services-ads:17.1.3'
