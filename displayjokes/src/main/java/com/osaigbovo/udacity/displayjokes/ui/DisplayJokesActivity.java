@@ -1,16 +1,16 @@
-package com.osaigbovo.udacity.displayjokes;
+package com.osaigbovo.udacity.displayjokes.ui;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.osaigbovo.udacity.displayjokes.R;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import dagger.android.support.DaggerAppCompatActivity;
 
-import android.view.View;
-
-public class DisplayJokesActivity extends AppCompatActivity {
+public class DisplayJokesActivity extends DaggerAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

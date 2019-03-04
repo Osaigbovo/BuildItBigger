@@ -1,21 +1,29 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.osaigbovo.udacity.displayjokes.ui.DisplayJokesActivity;
+import com.udacity.gradle.builditbigger.R;
+import com.udacity.gradle.builditbigger.di.CommonHelloService;
 
-public class MainActivity extends AppCompatActivity {
+import javax.inject.Inject;
+
+import dagger.android.support.DaggerAppCompatActivity;
+
+public class MainActivity extends DaggerAppCompatActivity {
+
+    @Inject
+    CommonHelloService commonHelloService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
 
@@ -42,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, commonHelloService.sayHello(), Toast.LENGTH_SHORT).show();
+
+        startActivity(new Intent(this, DisplayJokesActivity.class));
+
     }
 
 

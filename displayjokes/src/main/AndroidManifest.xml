@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name=".DisplayJokesActivity"
+            android:name=".ui.DisplayJokesActivity"
             android:label="@string/title_activity_display_jokes"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

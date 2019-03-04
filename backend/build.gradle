@@ -13,6 +13,7 @@ buildscript {
 
 repositories {
     jcenter()
+    google()
 }
 
 apply plugin: 'java'
@@ -22,6 +23,17 @@ apply plugin: 'com.google.cloud.tools.endpoints-framework-server'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
+
+appengine.tools.cloudSdkHome="C:/Program Files (x86)/Google/Cloud SDK/google-cloud-sdk"
+
+appengine {
+    run {
+        host = "0.0.0.0"
+        port = 8080
+//        jvmFlags = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005']
+//        jvmFlags = ["-Dappengine.fullscan.seconds=5"]
+    }
+}
 
 dependencies {
     implementation project(':jokelib')
