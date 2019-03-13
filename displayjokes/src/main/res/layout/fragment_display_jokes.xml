@@ -8,4 +8,16 @@
     tools:context=".ui.DisplayJokesActivityFragment"
     tools:showIn="@layout/activity_display_jokes">
 
+    <TextView
+        android:id="@+id/text_display_jokes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/text_joke" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
