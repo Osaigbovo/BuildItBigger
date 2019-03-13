@@ -7,7 +7,11 @@ dependencies {
 
     androidTestImplementation "androidx.test:runner:${versions.test_runner}"
     androidTestImplementation "androidx.test:rules:${versions.test_rules}"
-    androidTestImplementation "androidx.test.espresso:espresso-contrib:${versions.espresso}"
+
     androidTestImplementation "androidx.test.espresso:espresso-core:${versions.espresso}"
+
+    /*androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })*/
 
 }
