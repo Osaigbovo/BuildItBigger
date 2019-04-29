@@ -9,7 +9,7 @@ buildscript {
             'androidx'           : '1.0.0',
             'butterknife'        : '10.1.0',
             'constraintLayout'   : '2.0.0-alpha3',
-            'dagger'             : '2.19',
+            'dagger'             : '2.21',
             'espresso'           : '3.1.1',
             'junit'              : '4.12',
             'material'           : '1.0.0',
