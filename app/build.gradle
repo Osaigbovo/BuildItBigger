@@ -34,6 +34,20 @@ android {
         }
     }
 
+    flavorDimensions "default"
+    productFlavors {
+        free {
+//            applicationId "com.udacity.gradle.builditbigger.free"
+//            versionNameSuffix "-free"
+//            dimension "jokes"
+        }
+        paid {
+//            applicationId "com.udacity.gradle.builditbigger.paid"
+//            versionNameSuffix "-paid"
+//            dimension "jokes"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
