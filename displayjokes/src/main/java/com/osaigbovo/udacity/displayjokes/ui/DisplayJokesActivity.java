@@ -2,12 +2,12 @@ package com.osaigbovo.udacity.displayjokes.ui;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.osaigbovo.udacity.displayjokes.R;
 
-import androidx.appcompat.widget.Toolbar;
-import dagger.android.support.DaggerAppCompatActivity;
-
-public class DisplayJokesActivity extends DaggerAppCompatActivity {
+public class DisplayJokesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

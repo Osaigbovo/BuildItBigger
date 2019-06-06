@@ -37,16 +37,24 @@ android {
     flavorDimensions "default"
     productFlavors {
         free {
-//            applicationId "com.udacity.gradle.builditbigger.free"
-//            versionNameSuffix "-free"
-//            dimension "jokes"
+            /*applicationId "com.udacity.gradle.builditbigger.free"
+            versionNameSuffix "-free"*/
+            dimension "default"
+            applicationIdSuffix ".free"
         }
         paid {
-//            applicationId "com.udacity.gradle.builditbigger.paid"
-//            versionNameSuffix "-paid"
-//            dimension "jokes"
+            /*applicationId "com.udacity.gradle.builditbigger.paid"
+            versionNameSuffix "-paid"*/
+            dimension "default"
+            applicationIdSuffix ".paid"
         }
     }
+
+    /*sourceSets {
+        paid {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }*/
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -73,7 +81,7 @@ dependencies {
     endpointsServer project(path: ':backend', configuration: 'endpoints')
 
     //
-    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+    implementation 'com.google.android.gms:play-services-ads:17.2.1'
 
     //
     implementation 'com.google.api-client:google-api-client:1.25.0'

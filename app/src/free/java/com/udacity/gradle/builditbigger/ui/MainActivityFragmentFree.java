@@ -5,21 +5,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.udacity.gradle.builditbigger.R;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment {
+public class MainActivityFragmentFree extends Fragment {
 
-    public MainActivityFragment() {
+    public MainActivityFragmentFree() {
     }
 
     @Override
@@ -33,7 +33,7 @@ public class MainActivityFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_main, container, false);
+        View root = inflater.inflate(R.layout.fragment_main_free, container, false);
 
         AdView mAdView = root.findViewById(R.id.adView);
         // Create an ad request. Check logcat output for the hashed device ID to
@@ -47,4 +47,5 @@ public class MainActivityFragment extends Fragment {
 
         return root;
     }
+
 }
