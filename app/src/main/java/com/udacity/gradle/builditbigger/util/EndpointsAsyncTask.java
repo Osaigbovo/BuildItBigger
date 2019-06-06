@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
 
+    private static final String TAG = EndpointsAsyncTask.class.getSimpleName();
     private static MyApi sApiService = null;
     private RetrieveJokeListener retrieveJokeListener;
 
@@ -37,7 +38,8 @@ public class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
         try {
             return sApiService.tellJokes().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            Log.d(TAG, "doInBackground: " + e.getMessage());
+            return null;
         }
     }
 

@@ -26,10 +26,12 @@ public class DisplayJokesActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_display_jokes, container, false);
 
-        Intent intent = Objects.requireNonNull(getActivity()).getIntent();
-        String joke = intent.getStringExtra(FUNNY_JOKE);
-        TextView displayJoke = rootView.findViewById(R.id.text_display_jokes);
-        displayJoke.setText(joke);
+        if (Objects.requireNonNull(getActivity()).getIntent().hasExtra(FUNNY_JOKE)) {
+            Intent intent = Objects.requireNonNull(getActivity()).getIntent();
+            String joke = intent.getStringExtra(FUNNY_JOKE);
+            TextView displayJoke = rootView.findViewById(R.id.text_display_jokes);
+            displayJoke.setText(joke);
+        }
 
         return rootView;
     }
