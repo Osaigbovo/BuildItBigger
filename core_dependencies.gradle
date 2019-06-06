@@ -6,10 +6,4 @@ dependencies {
 
     implementation "com.google.android.material:material:${versions.material}"
 
-    implementation "com.google.dagger:dagger:${versions.dagger}"
-    implementation "com.google.dagger:dagger-android:${versions.dagger}"
-    implementation "com.google.dagger:dagger-android-support:${versions.dagger}"
-    annotationProcessor "com.google.dagger:dagger-compiler:${versions.dagger}"
-    annotationProcessor "com.google.dagger:dagger-android-processor:${versions.dagger}"
-
 }
