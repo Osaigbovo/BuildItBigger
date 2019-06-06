@@ -40,8 +40,8 @@ public class MainActivityFragmentFree extends Fragment {
         // get test ads on a physical device. e.g.
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
         AdRequest adRequest = new AdRequest.Builder()
-                //.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("CA896757D2C12FA1401DD3AB7CE9E17D")
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                //.addTestDevice("CA896757D2C12FA1401DD3AB7CE9E17D")
                 .build();
         mAdView.loadAd(adRequest);
 

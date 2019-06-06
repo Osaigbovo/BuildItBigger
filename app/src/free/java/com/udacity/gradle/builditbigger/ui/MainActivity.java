@@ -15,8 +15,6 @@ import com.udacity.gradle.builditbigger.R;
 import com.udacity.gradle.builditbigger.util.EndpointsAsyncTask;
 import com.udacity.gradle.builditbigger.util.RetrieveJokeListener;
 
-import java.util.concurrent.ExecutionException;
-
 public class MainActivity extends AppCompatActivity implements RetrieveJokeListener {
 
     @Override
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements RetrieveJokeListe
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view){
+    public void tellJoke(View view) {
         new EndpointsAsyncTask(this).execute();
     }
 

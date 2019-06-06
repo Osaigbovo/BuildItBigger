@@ -2,6 +2,7 @@ package com.osaigbovo.udacity.jokelib;
 
 import java.util.Random;
 
+// https://github.com/Ezike/BuildItBigger/blob/master/Jokeslib/src/main/java/com/example/jokeslib/Jokes.java
 public final class Jokes {
 
     private static final Random RANDOM = new Random();

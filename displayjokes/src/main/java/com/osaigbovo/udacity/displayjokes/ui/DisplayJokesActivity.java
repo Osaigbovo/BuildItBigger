@@ -15,7 +15,6 @@ public class DisplayJokesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_jokes);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
 
 }

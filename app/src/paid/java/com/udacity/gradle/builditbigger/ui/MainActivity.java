@@ -2,6 +2,7 @@ package com.udacity.gradle.builditbigger.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements RetrieveJokeListe
     public void onJokeRetrieved(@Nullable String joke) {
         Intent intent = new Intent(this, DisplayJokesActivity.class);
         intent.putExtra(DisplayJokesActivityFragment.FUNNY_JOKE, joke);
+        Log.e("MAINACTIVITY", joke);
         startActivity(intent);
     }
 
